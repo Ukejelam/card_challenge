@@ -1,0 +1,75 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+.overall {
+  display: inline-grid;
+  padding: 10%;
+  grid-template-columns: 50% 50%;
+}
+
+
+.main {
+  background-color: hsl(244, 38%, 16%);
+  padding: 15%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.main-heading {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 60px;
+}
+
+#insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin-right: 25%;
+}
+
+
+.pic {
+  background-color: hsl(277, 64%, 61%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.pic img {
+  opacity: 0.5;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  .overall {
+    display: grid;
+    padding: 10%;
+    grid-template-rows: 30% 70%;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    margin-right: 25%;
+  }
+}
